@@ -28,3 +28,8 @@ Route::get('prueba', function(){
 Route::get('prueba2/{id?}', function($id=NULL){
     return "El parametro pasado es : " . $id;
 });
+
+//concatenamos el parametro nombre
+Route::get('prueba2/{id?}/{nombre}', function($id=NULL, $nombre){
+    return "Los parametros pasados son : " . $id . " " . $nombre;
+});
