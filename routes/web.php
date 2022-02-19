@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('test', function(){
-    return "Hola mundo";
+/*funcion anonima por que no contiene argumentos*/
+Route::get('prueba', function(){
+    $suma=1+2;
+    return "Hola mundo " . $suma;
 });
