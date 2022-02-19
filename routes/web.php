@@ -37,3 +37,7 @@ Route::get('prueba2/{id?}/{nombre}', function($id=NULL, $nombre){
 Route::get('mi-ejemplo', function(){
     return view('ejemplo');
 });
+
+Route::get('mi-ejemplo/{codigo}', function($codigo){
+    return view('ejemplo' , compact('codigo'));
+});
