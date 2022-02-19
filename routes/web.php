@@ -33,3 +33,7 @@ Route::get('prueba2/{id?}', function($id=NULL){
 Route::get('prueba2/{id?}/{nombre}', function($id=NULL, $nombre){
     return "Los parametros pasados son : " . $id . " " . $nombre;
 });
+
+Route::get('mi-ejemplo', function(){
+    return view('ejemplo');
+});
