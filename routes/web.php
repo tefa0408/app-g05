@@ -24,6 +24,7 @@ Route::get('prueba', function(){
 });
 
 //para definir un parametro entonces tenemos que agregar el '/'{id}´y dentro de la funcion tambien
-Route::get('prueba2/{id}', function($id){
+// para que pueda ser opcional agregamos '?' y con valor NULL
+Route::get('prueba2/{id?}', function($id=NULL){
     return "El parametro pasado es : " . $id;
 });
